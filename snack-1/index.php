@@ -33,7 +33,7 @@ $match_day = [
     ], 
 ];
 
-var_dump($match_day);
+//var_dump($match_day);
 
 ?>
 
@@ -48,6 +48,15 @@ var_dump($match_day);
     <title>Document</title>
 </head>
 <body>
-    
+
+    <ul>
+        <?php for($i = 0 ; $i < count($match_day); $i++) { ?>
+            <li>
+                <?php echo $match_day[$i][home] ?> - <?php echo $match_day[$i][guest] ?> | <?php echo $match_day[$i][points_home] ?> - <?php echo $match_day[$i][points_guest] ?>
+            </li>
+        <?php } ?>
+    </ul>
+
+
 </body>
 </html>
