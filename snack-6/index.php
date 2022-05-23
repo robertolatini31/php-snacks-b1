@@ -48,7 +48,7 @@ $db = [
     </h2>
     
     <?php foreach($people as $single) : ?>
-        <p style="<?php echo($key == 'teachers' ? 'background-color:green' : 'background-color:red') ?>">
+        <p style="<?php echo($key == 'teachers' ? 'background-color:gray' : 'background-color:green') ?>">
             <?php echo $single['name'] . ' ' . $single['lastname'] ?>
         </p>
     <?php endforeach; ?>
